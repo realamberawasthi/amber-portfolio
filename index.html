@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber Awasthi | Software Developer</title>
+  <meta name="description" content="Amber Awasthi – Software Developer. Building clean code, strong logic, and modern web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM FIRE CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">AA<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="public/Amber_Awasthi_CV.pdf" download class="nav-cv-btn">
+      <i class="fas fa-download"></i> CV
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#certificates" class="mob-link">Certificates</a>
+    <a href="#achievements" class="mob-link">Achievements</a>
+    <a href="#gallery" class="mob-link">Gallery</a>
+    <a href="#contact" class="mob-link">Contact</a>
+    <a href="public/Amber_Awasthi_CV.pdf" download class="mob-link cv-mob">Download CV</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       LANDING / HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="video-wrap">
+      <video id="bgVideo" autoplay muted loop playsinline>
+        <source src="public/video/bg.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+      <div class="cinematic-bars">
+        <div class="bar-top"></div>
+        <div class="bar-bottom"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up" style="animation-delay:0.2s">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up" style="animation-delay:0.5s">
+        <span class="name-line">Amber</span>
+        <span class="name-line glow-text">Awasthi</span>
+      </h1>
+      <p class="hero-role reveal-up" style="animation-delay:0.9s">
+        <span class="type-cursor">Software Developer</span>
+      </p>
+      <p class="hero-tagline reveal-up" style="animation-delay:1.2s">
+        Building clean code, strong logic, and modern web experiences
+      </p>
+      <div class="hero-actions reveal-up" style="animation-delay:1.6s">
+        <a href="#about" class="btn-primary" id="enterBtn">
+          <span>Enter Portfolio</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+        <a href="public/Amber_Awasthi_CV.pdf" download class="btn-ghost">
+          <i class="fas fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-socials reveal-up" style="animation-delay:1.9s">
+        <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/amber-awasthi" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:realambera.official@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section id="about" class="section has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap fade-in">
+          <div class="profile-video-frame">
+            <div class="pvf-border"></div>
+            <video id="profileVideo" class="profile-video" autoplay muted playsinline preload="auto">
+              <source src="public/video/profile.mp4" type="video/mp4" />
+            </video>
+            <div class="pvf-overlay"></div>
+          </div>
+          <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
+          <div class="floating-badge badge-2"><i class="fas fa-terminal"></i></div>
+          <div class="floating-badge badge-3"><i class="fas fa-database"></i></div>
+        </div>
+        <div class="about-text fade-in">
+          <h3>Hello, I'm <span class="highlight">Amber Awasthi</span></h3>
+          <p>
+            I'm a passionate <strong>Software Developer</strong> pursuing my Bachelor of Technology in Computer Science and Engineering at Lovely Professional University. I love crafting elegant solutions to complex problems.
+          </p>
+          <p>
+            My journey spans full-stack web development, data science, and system design — driven by a love for clean architecture and meaningful user experiences.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new technologies, contributing to open-source, and participating in hackathons. I believe great software is built at the intersection of technology and creativity.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-count="3">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="10">0</span>+
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="4">0</span>+
+              <span class="stat-label">Achievements</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">
+              <span>Get In Touch</span> <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="public/Amber_Awasthi_CV.pdf" download class="btn-ghost">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════════ -->
+  <section id="education" class="section section-alt has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Edu<span class="highlight">cation</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-body">
+              <span class="tl-year">2023 – 2026</span>
+              <h3>Bachelor of Technology</h3>
+              <p class="tl-field">Computer Science &amp; Engineering</p>
+              <p class="tl-institution"><i class="fas fa-university"></i> Lovely Professional University</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-school"></i></div>
+            <div class="tl-body">
+              <span class="tl-year">Intermediate</span>
+              <h3>Intermediate (Class XII)</h3>
+              <p class="tl-field">Science Stream</p>
+              <p class="tl-institution"><i class="fas fa-map-marker-alt"></i> Delhi Public School, Kanpur</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-book"></i></div>
+            <div class="tl-body">
+              <span class="tl-year">Matriculation</span>
+              <h3>Matriculation (Class X)</h3>
+              <p class="tl-field">General Studies</p>
+              <p class="tl-institution"><i class="fas fa-map-marker-alt"></i> Delhi Public School, Kanpur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <section id="skills" class="section has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-pill"><span class="skill-icon-text">C++</span></div>
+            <div class="skill-pill"><span class="skill-icon-text">C</span></div>
+            <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <i class="fas fa-layer-group"></i>
+            <h3>Frameworks &amp; Libraries</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><i class="fab fa-react"></i> React</div>
+            <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="skill-pill"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+            <div class="skill-pill"><span class="skill-icon-text">FastAPI</span></div>
+            <div class="skill-pill"><span class="skill-icon-text">Spring MVC</span></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools &amp; Databases</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><i class="fas fa-database"></i> MySQL</div>
+            <div class="skill-pill"><i class="fas fa-leaf"></i> MongoDB</div>
+            <div class="skill-pill"><span class="skill-icon-text">SQLite</span></div>
+            <div class="skill-pill"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-pill"><i class="fab fa-github"></i> GitHub</div>
+            <div class="skill-pill"><i class="fab fa-aws"></i> AWS</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated skill bars -->
+      <div class="skill-bars-wrap fade-in">
+        <h3 class="skill-bars-title">Proficiency</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="bar-label"><span>JavaScript / React</span><span class="bar-pct">90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="bar-label"><span>Python / FastAPI</span><span class="bar-pct">82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="bar-label"><span>C++ / C</span><span class="bar-pct">80%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="bar-label"><span>Node.js / MongoDB</span><span class="bar-pct">85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="bar-label"><span>AWS / Cloud</span><span class="bar-pct">65%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+  <section id="projects" class="section section-alt has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-water"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AquaScope</h3>
+            <p class="project-subtitle">Water Quality &amp; Disease Analysis Platform</p>
+            <p class="project-desc">A full-stack platform to monitor water quality parameters and predict disease risk using machine learning algorithms. Provides real-time analysis and visual dashboards.</p>
+          </div>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span>React</span>
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>SQLite</span>
+              <span>Scikit-Learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Backbite</h3>
+            <p class="project-subtitle">Real-Time Chat Application</p>
+            <p class="project-desc">A live chat application using WebSockets for real-time bidirectional communication, featuring group chats, user authentication, and persistent message history.</p>
+          </div>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Socket.io</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-in">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-film"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>CineRate</h3>
+            <p class="project-subtitle">Movie Review Application</p>
+            <p class="project-desc">A sleek movie review and rating platform integrating external movie APIs to display metadata, ratings, and user-submitted reviews with a clean modern interface.</p>
+          </div>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Tailwind</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CERTIFICATES
+  ══════════════════════════════════════════ -->
+  <section id="certificates" class="section has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verified Learning</span>
+        <h2 class="section-title">Certifi<span class="highlight">cates</span></h2>
+        <div class="title-line"></div>
+        <p class="section-sub">Click any certificate to view in full screen</p>
+      </div>
+      <div class="certs-grid" id="certsGrid">
+        <!-- Certificates are dynamically generated by JS -->
+      </div>
+      <p class="certs-note fade-in" id="certsNote" style="display:none">
+        <i class="fas fa-info-circle"></i> Place certificate images (<code>.jpg</code> / <code>.png</code> / <code>.webp</code>) in <code>public/certificates/</code> — they will appear here automatically.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ACHIEVEMENTS
+  ══════════════════════════════════════════ -->
+  <section id="achievements" class="section section-alt has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">Achieve<span class="highlight">ments</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card fade-in">
+          <div class="ach-glow"></div>
+          <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Innovathon Winner</h3>
+          <p>Won a competitive innovation hackathon, demonstrating problem-solving and rapid prototyping under pressure.</p>
+          <div class="ach-badge">Winner 🏆</div>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="ach-glow"></div>
+          <div class="ach-icon"><i class="fas fa-medal"></i></div>
+          <h3>Second Runner Up – Tech Edge, IIM Rohtak</h3>
+          <p>Secured Second Runner Up position at the prestigious Tech Edge Competition organized by IIM Rohtak, showcasing technical excellence and innovation.</p>
+          <div class="ach-badge">Runner Up 🥉</div>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="ach-glow"></div>
+          <div class="ach-icon"><i class="fab fa-google"></i></div>
+          <h3>Google GenAI Exchange</h3>
+          <p>Shortlisted for Google's prestigious GenAI Exchange program, recognizing excellence in AI and machine learning projects.</p>
+          <div class="ach-badge">Shortlisted 🤖</div>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="ach-glow"></div>
+          <div class="ach-icon"><i class="fas fa-star"></i></div>
+          <h3>Campus Ambassador</h3>
+          <p>Served as a Campus Ambassador, representing and promoting technical communities and bridging industry-academia connections.</p>
+          <div class="ach-badge">Ambassador 🌟</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════════ -->
+  <section id="gallery" class="section has-galaxy">
+    <div class="gallery-particles" id="galleryParticles"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Moments & Memories</span>
+        <h2 class="section-title">Gal<span class="highlight">lery</span></h2>
+        <div class="title-line"></div>
+        <p class="section-sub">Snapshots from public speaking, workshops, and award ceremonies</p>
+      </div>
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-card gallery-card--tall fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img1.jpeg" alt="Public speaking event" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img2.jpeg" alt="Workshop participation" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card gallery-card--wide fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img3.png" alt="Award ceremony" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img4.jpeg" alt="Team collaboration" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card gallery-card--tall fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img5.jpeg" alt="Speaking at event" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card fade-in" data-tilt>
+          <div class="gallery-card-inner">
+            <img src="public/gallery/img6.jpeg" alt="Competition moment" loading="lazy" />
+            <div class="gallery-card-glow"></div>
+            <div class="gallery-card-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="section has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="title-line"></div>
+        <p class="section-sub">Open to opportunities, collaborations, and conversations.</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-cards fade-in">
+          <a href="mailto:realambera.official@gmail.com" class="contact-card" id="emailCard">
+            <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+            <div class="cc-body">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">realambera.official@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right cc-arrow"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/amber-awasthi" target="_blank" rel="noopener" class="contact-card" id="linkedinCard">
+            <div class="cc-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div class="cc-body">
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">amber-awasthi</span>
+            </div>
+            <i class="fas fa-arrow-right cc-arrow"></i>
+          </a>
+          <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" class="contact-card" id="githubCard">
+            <div class="cc-icon github"><i class="fab fa-github"></i></div>
+            <div class="cc-body">
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">realamberawasthi</span>
+            </div>
+            <i class="fas fa-arrow-right cc-arrow"></i>
+          </a>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="nameInput" placeholder=" " required autocomplete="off" />
+            <label for="nameInput">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="emailInput" placeholder=" " required autocomplete="off" />
+            <label for="emailInput">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="msgInput" rows="5" placeholder=" " required></textarea>
+            <label for="msgInput">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submitBtn">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">AA<span class="dot">.</span></div>
+      <p class="footer-text">Built with ❤️ by Amber Awasthi</p>
+      <div class="footer-socials">
+        <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/amber-awasthi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:realambera.official@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Amber Awasthi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       CERTIFICATE MODAL
+  ══════════════════════════════════════════ -->
+  <div class="cert-modal" id="certModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-img-wrap">
+        <img src="" alt="Certificate" id="modalImg" />
+      </div>
+      <p class="modal-caption" id="modalCaption"></p>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
