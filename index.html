@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -26,6 +27,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#training">Training</a></li>
       <li><a href="#certificates">Certificates</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#gallery">Gallery</a></li>
@@ -44,6 +46,7 @@
     <a href="#about" class="mob-link">About</a>
     <a href="#skills" class="mob-link">Skills</a>
     <a href="#projects" class="mob-link">Projects</a>
+    <a href="#training" class="mob-link">Training</a>
     <a href="#certificates" class="mob-link">Certificates</a>
     <a href="#achievements" class="mob-link">Achievements</a>
     <a href="#gallery" class="mob-link">Gallery</a>
@@ -232,52 +235,40 @@
         <div class="title-line"></div>
       </div>
 
-      <div class="skills-categories">
-        <!-- Languages -->
-        <div class="skill-category fade-in">
-          <div class="skill-cat-header">
-            <i class="fas fa-code"></i>
-            <h3>Languages</h3>
-          </div>
-          <div class="skill-items">
-            <div class="skill-pill"><i class="fab fa-js-square"></i> JavaScript</div>
-            <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
-            <div class="skill-pill"><span class="skill-icon-text">C++</span></div>
-            <div class="skill-pill"><span class="skill-icon-text">C</span></div>
-            <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="skill-category fade-in">
-          <div class="skill-cat-header">
-            <i class="fas fa-layer-group"></i>
-            <h3>Frameworks &amp; Libraries</h3>
-          </div>
-          <div class="skill-items">
-            <div class="skill-pill"><i class="fab fa-react"></i> React</div>
-            <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
-            <div class="skill-pill"><i class="fab fa-html5"></i> HTML5</div>
-            <div class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
-            <div class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-            <div class="skill-pill"><span class="skill-icon-text">FastAPI</span></div>
-            <div class="skill-pill"><span class="skill-icon-text">Spring MVC</span></div>
+      <!-- Auto-scrolling skill marquee -->
+      <div class="skills-marquee-wrap fade-in">
+        <div class="skills-marquee" id="skillsMarquee1">
+          <div class="marquee-track">
+            <div class="marquee-skill" style="--brand-color: #F7DF1E"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="marquee-skill" style="--brand-color: #3776AB"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="marquee-skill" style="--brand-color: #00599C"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+            <div class="marquee-skill" style="--brand-color: #E76F00"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="marquee-skill" style="--brand-color: #61DAFB"><i class="devicon-react-original colored"></i><span>React</span></div>
+            <div class="marquee-skill" style="--brand-color: #339933"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-skill" style="--brand-color: #F7DF1E"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="marquee-skill" style="--brand-color: #3776AB"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="marquee-skill" style="--brand-color: #00599C"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+            <div class="marquee-skill" style="--brand-color: #E76F00"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="marquee-skill" style="--brand-color: #61DAFB"><i class="devicon-react-original colored"></i><span>React</span></div>
+            <div class="marquee-skill" style="--brand-color: #339933"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
           </div>
         </div>
-
-        <!-- Tools -->
-        <div class="skill-category fade-in">
-          <div class="skill-cat-header">
-            <i class="fas fa-tools"></i>
-            <h3>Tools &amp; Databases</h3>
-          </div>
-          <div class="skill-items">
-            <div class="skill-pill"><i class="fas fa-database"></i> MySQL</div>
-            <div class="skill-pill"><i class="fas fa-leaf"></i> MongoDB</div>
-            <div class="skill-pill"><span class="skill-icon-text">SQLite</span></div>
-            <div class="skill-pill"><i class="fab fa-git-alt"></i> Git</div>
-            <div class="skill-pill"><i class="fab fa-github"></i> GitHub</div>
-            <div class="skill-pill"><i class="fab fa-aws"></i> AWS</div>
+        <div class="skills-marquee skills-marquee--reverse" id="skillsMarquee2">
+          <div class="marquee-track">
+            <div class="marquee-skill" style="--brand-color: #47A248"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+            <div class="marquee-skill" style="--brand-color: #F05032"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="marquee-skill" style="--brand-color: #FF9900"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+            <div class="marquee-skill" style="--brand-color: #E34F26"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="marquee-skill" style="--brand-color: #1572B6"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="marquee-skill" style="--brand-color: #4479A1"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-skill" style="--brand-color: #47A248"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+            <div class="marquee-skill" style="--brand-color: #F05032"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="marquee-skill" style="--brand-color: #FF9900"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+            <div class="marquee-skill" style="--brand-color: #E34F26"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="marquee-skill" style="--brand-color: #1572B6"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="marquee-skill" style="--brand-color: #4479A1"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
           </div>
         </div>
       </div>
@@ -321,84 +312,163 @@
         <h2 class="section-title">My <span class="highlight">Projects</span></h2>
         <div class="title-line"></div>
       </div>
-      <div class="projects-grid">
+    </div> <!-- End container -->
 
-        <!-- Project 1 -->
-        <div class="project-card fade-in">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-water"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+    <div class="projects-wrapper">
+      <!-- Project 1 — image LEFT -->
+      <div class="project-showcase fade-in" data-parallax>
+        <div class="ps-image-wrap" data-parallax-img>
+          <div class="ps-image-glow"></div>
+          <img src="public/projects/aquascope.jpg" alt="AquaScope project screenshot" loading="lazy" />
+        </div>
+        <div class="ps-content">
+          <span class="ps-number">01</span>
+          <h3 class="ps-title">AquaScope</h3>
+          <p class="ps-subtitle">Water Quality & Disease Analysis Platform</p>
+          <p class="ps-desc">A full-stack platform to monitor water quality parameters and predict disease risk using machine learning algorithms. Provides real-time analysis and visual dashboards.</p>
+          <div class="ps-tech">
+            <span>React</span><span>FastAPI</span><span>Python</span><span>SQLite</span><span>Scikit-Learn</span>
           </div>
-          <div class="project-body">
-            <h3>AquaScope</h3>
-            <p class="project-subtitle">Water Quality &amp; Disease Analysis Platform</p>
-            <p class="project-desc">A full-stack platform to monitor water quality parameters and predict disease risk using machine learning algorithms. Provides real-time analysis and visual dashboards.</p>
-          </div>
-          <div class="project-footer">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>FastAPI</span>
-              <span>Python</span>
-              <span>SQLite</span>
-              <span>Scikit-Learn</span>
-            </div>
+          <div class="ps-actions">
+            <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fab fa-github"></i> <span>View Code</span></a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 2 -->
-        <div class="project-card fade-in">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-comments"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+      <!-- Project 2 — image RIGHT -->
+      <div class="project-showcase project-showcase--reverse fade-in" data-parallax>
+        <div class="ps-image-wrap" data-parallax-img>
+          <div class="ps-image-glow"></div>
+          <img src="public/projects/BackBite.png" alt="Backbite project screenshot" loading="lazy" />
+        </div>
+        <div class="ps-content">
+          <span class="ps-number">02</span>
+          <h3 class="ps-title">Backbite</h3>
+          <p class="ps-subtitle">Real-Time Chat Application</p>
+          <p class="ps-desc">A live chat application using WebSockets for real-time bidirectional communication, featuring group chats, user authentication, and persistent message history.</p>
+          <div class="ps-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
           </div>
-          <div class="project-body">
-            <h3>Backbite</h3>
-            <p class="project-subtitle">Real-Time Chat Application</p>
-            <p class="project-desc">A live chat application using WebSockets for real-time bidirectional communication, featuring group chats, user authentication, and persistent message history.</p>
-          </div>
-          <div class="project-footer">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>Socket.io</span>
-            </div>
+          <div class="ps-actions">
+            <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fab fa-github"></i> <span>View Code</span></a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="project-card fade-in">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-film"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+      <!-- Project 3 — image LEFT -->
+      <div class="project-showcase fade-in" data-parallax>
+        <div class="ps-image-wrap" data-parallax-img>
+          <div class="ps-image-glow"></div>
+          <img src="public/projects/CineRate.jpg" alt="CineRate project screenshot" loading="lazy" />
+        </div>
+        <div class="ps-content">
+          <span class="ps-number">03</span>
+          <h3 class="ps-title">CineRate</h3>
+          <p class="ps-subtitle">Movie Review Application</p>
+          <p class="ps-desc">A sleek movie review and rating platform integrating external movie APIs to display metadata, ratings, and user-submitted reviews with a clean modern interface.</p>
+          <div class="ps-tech">
+            <span>React</span><span>JavaScript</span><span>Tailwind</span><span>Node.js</span>
           </div>
-          <div class="project-body">
-            <h3>CineRate</h3>
-            <p class="project-subtitle">Movie Review Application</p>
-            <p class="project-desc">A sleek movie review and rating platform integrating external movie APIs to display metadata, ratings, and user-submitted reviews with a clean modern interface.</p>
-          </div>
-          <div class="project-footer">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>JavaScript</span>
-              <span>Tailwind</span>
-              <span>Node.js</span>
-            </div>
+          <div class="ps-actions">
+            <a href="https://github.com/realamberawasthi" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fab fa-github"></i> <span>View Code</span></a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+
+  <!-- ══════════════════════════════════════════
+       SUMMER TRAINING
+  ══════════════════════════════════════════ -->
+  <section id="training" class="section section-alt has-galaxy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Professional Development</span>
+        <h2 class="section-title">Summer <span class="highlight">Training</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="training-post-wrap fade-in">
+        <div class="training-post" id="trainingPost" tabindex="0" role="button" aria-label="View training details">
+          <!-- Post header - LinkedIn style -->
+          <div class="tp-header">
+            <div class="tp-avatar">AA</div>
+            <div class="tp-user-info">
+              <h4 class="tp-name">Amber Awasthi</h4>
+              <p class="tp-role">Software Developer | Java Developer</p>
+              <span class="tp-time"><i class="fas fa-clock"></i> June 2025 – July 2025</span>
+            </div>
+            <div class="tp-badge"><i class="fas fa-certificate"></i></div>
+          </div>
+
+          <!-- Post body -->
+          <div class="tp-body">
+            <p class="tp-headline">
+              <i class="fas fa-graduation-cap"></i>
+              Completed <strong>6-Week Summer Training</strong> in Java Programming at <strong>Techvanto Academy, New Delhi</strong>
+            </p>
+            <p class="tp-description">
+              Learned Core Java, OOP, Collections, Exception Handling, Multithreading, and built a <strong>Banking Management System</strong>.
+            </p>
+            <div class="tp-tags">
+              <span><i class="fab fa-java"></i> Java</span>
+              <span><i class="fas fa-project-diagram"></i> OOP</span>
+              <span><i class="fas fa-layer-group"></i> Collections</span>
+              <span><i class="fas fa-cogs"></i> Multithreading</span>
+            </div>
+          </div>
+
+          <!-- Certificate image -->
+          <div class="tp-image-wrap">
+            <img src="public/training/training.png" alt="Java Summer Training Certificate" loading="lazy" />
+            <div class="tp-image-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Click to view details</span>
+            </div>
+          </div>
+
+          <!-- Post footer -->
+          <div class="tp-footer">
+            <div class="tp-reaction"><i class="fas fa-thumbs-up"></i> <span>Impressive</span></div>
+            <div class="tp-reaction"><i class="fas fa-award"></i> <span>Certified</span></div>
+            <div class="tp-reaction"><i class="fas fa-share"></i> <span>Share</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Modal -->
+  <div class="training-modal" id="trainingModal">
+    <div class="training-modal-backdrop" id="trainingModalBackdrop"></div>
+    <div class="training-modal-content">
+      <button class="modal-close" id="trainingModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="tm-body">
+        <div class="tm-image-wrap">
+          <img src="public/training/training.png" alt="Java Summer Training Certificate" />
+        </div>
+        <div class="tm-details">
+          <h3>Summer Training in Java Programming</h3>
+          <div class="tm-meta">
+            <span><i class="fas fa-building"></i> Techvanto Academy, New Delhi</span>
+            <span><i class="fas fa-calendar"></i> June 2025 – July 2025</span>
+            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+          </div>
+          <div class="tm-desc">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Core Java Fundamentals</li>
+              <li>Object-Oriented Programming</li>
+              <li>Collections Framework</li>
+              <li>Exception Handling</li>
+              <li>Multithreading & Concurrency</li>
+              <li>Banking Management System Project</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ══════════════════════════════════════════
        CERTIFICATES

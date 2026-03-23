@@ -527,5 +527,75 @@ window.addEventListener('scroll', () => {
   }
 })();
 
-console.log('%c Amber Awasthi Portfolio 🔥', 'color:#ff6a00; font-size:18px; font-weight:900;');
+/* ══════════════════════════════════════════
+   PARALLAX for Project Showcase
+══════════════════════════════════════════ */
+(function initParallax() {
+  const parallaxItems = document.querySelectorAll('[data-parallax-img]');
+  if (!parallaxItems.length) return;
 
+  function handleParallax() {
+    parallaxItems.forEach(img => {
+      const rect = img.getBoundingClientRect();
+      const centerY = rect.top + rect.height / 2;
+      const viewCenter = window.innerHeight / 2;
+      const offset = (centerY - viewCenter) * 0.08;
+      img.style.transform = `translateY(${offset}px)`;
+    });
+  }
+
+  window.addEventListener('scroll', handleParallax, { passive: true });
+  handleParallax();
+})();
+
+/* ══════════════════════════════════════════
+   TRAINING MODAL
+══════════════════════════════════════════ */
+(function initTrainingModal() {
+  const post = document.getElementById('trainingPost');
+  const modal = document.getElementById('trainingModal');
+  const backdrop = document.getElementById('trainingModalBackdrop');
+  const closeBtn = document.getElementById('trainingModalClose');
+  if (!post || !modal) return;
+
+  function openTrainingModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeTrainingModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  post.addEventListener('click', openTrainingModal);
+  post.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openTrainingModal(); }
+  });
+  closeBtn.addEventListener('click', closeTrainingModal);
+  backdrop.addEventListener('click', closeTrainingModal);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeTrainingModal();
+  });
+})();
+
+/* ══════════════════════════════════════════
+   REGISTER new elements with observers
+══════════════════════════════════════════ */
+(function registerNewElements() {
+  // Register project showcases and training post with reveal observer
+  document.querySelectorAll('.project-showcase.fade-in, .training-post-wrap.fade-in').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // Register new interactive elements with cursor hover
+  const ring = document.getElementById('cursorRing');
+  if (ring) {
+    document.querySelectorAll('.project-showcase, .training-post, .marquee-skill, .ps-image-wrap').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
+    });
+  }
+})();
+
+console.log('%c Amber Awasthi Portfolio 🔥', 'color:#ff6a00; font-size:18px; font-weight:900;');
